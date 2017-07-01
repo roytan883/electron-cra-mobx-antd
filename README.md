@@ -33,7 +33,7 @@ https://github.com/electron-userland/electron-builder-binaries/releases/download
 https://github.com/electron-userland/electron-builder-binaries/releases/download/winCodeSign-1.9.0/winCodeSign-1.9.0.7z
 ```
 
-> put them at:
+> decompress them to:
 
 ```
 C:\Users\YOUR_USER_NAME\AppData\Local\electron-builder\cache\nsis\nsis-3.0.1.13
