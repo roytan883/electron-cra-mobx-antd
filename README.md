@@ -1,4 +1,4 @@
-# electron-create-react-app
+# electron-cra-mobx-antd
 
 Boilerplate linking [electron](http://electron.atom.io/) with [create-react-app](https://github.com/facebookincubator/create-react-app), [Mobx](https://github.com/mobxjs/mobx) and [Ant.Design](https://github.com/ant-design/ant-design)
 
