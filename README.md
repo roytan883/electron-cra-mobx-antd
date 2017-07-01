@@ -4,6 +4,8 @@ Boilerplate linking [electron](http://electron.atom.io/) with [create-react-app]
 
 > This Boilerplate has solved the [create-react-app](https://github.com/facebookincubator/create-react-app) "require" and "process" wrong at electron render process: [window.require issue](https://github.com/electron/electron/issues/7300)
 
+![screen](https://github.com/roytan883/electron-cra-mobx-antd/blob/master/screen.jpg)
+
 ## Usage
 
 Run tests:
