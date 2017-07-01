@@ -5,6 +5,9 @@ import About from './components/About/About'
 import {HashRouter as Router, Route} from 'react-router-dom'
 import './index.css'
 
+const log = require('electron-log')
+log.warn("[Render]: index")
+
 ReactDOM.render(
   <Router>
     <div>
