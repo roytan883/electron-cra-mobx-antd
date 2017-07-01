@@ -7,6 +7,8 @@ import { observer } from "mobx-react";
 import Header from '../Header/Header'
 import './Home.css'
 
+import { Button } from 'antd';
+
 const isDev = require('electron-is-dev')
 
 @observer
@@ -29,6 +31,10 @@ export default class Home extends Component {
         <div>{"timeNow = " + this.timeNow}</div>
         <h1>Hello World!</h1>
         We are using Node.js {process.versions.node}, Chromium {process.versions.chrome}, and Electron {process.versions.electron}.
+        <Button type="primary">Primary</Button>
+        <Button>Default</Button>
+        <Button type="dashed">Dashed</Button>
+        <Button type="danger">Danger</Button>
         <div className='link-container'>
           <Link
             className='link'
