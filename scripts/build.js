@@ -92,6 +92,13 @@ measureFileSizesBeforeBuild(paths.appBuild)
 function build(previousFileSizes) {
   console.log('Creating an optimized production build...');
 
+  let compilerMain = webpack(require('../config/webpack.config.prod.main'));
+  compilerMain.run((err, stats) => {
+    if (err) {
+        console.error("compilerMain error = ", err)
+      }
+  })
+
   let compiler = webpack(config);
   return new Promise((resolve, reject) => {
     compiler.run((err, stats) => {
