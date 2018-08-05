@@ -13,8 +13,10 @@ import { Button } from 'antd'
 
 const isDev = require('electron-is-dev')
 
+type Props = {};
+
 @observer
-export default class Home extends Component {
+export default class Home extends Component<Props> {
   constructor () {
     super()
     setInterval(() => {

@@ -20,7 +20,7 @@
     "build": "node scripts/build.js",
     "test": "node scripts/test.js --env=jsdom",
     "electron-dev": "concurrently \"cross-env BROWSER=none yarn start\" \"wait-on http://localhost:3000 && electron .\"",
-    "electron-pack": "build --em.main=build/electron.js",
+    "electron-pack": "build -c.extraMetadata.main=build/electron.js",
     "preelectron-pack": "yarn build"
   },
   "babel": {
@@ -85,7 +85,7 @@
     "eslint-plugin-promise": "^3.8.0",
     "eslint-plugin-react": "^7.10.0",
     "eslint-plugin-standard": "^3.1.0",
-    "extract-text-webpack-plugin": "3.0.2",
+    "extract-text-webpack-plugin": "^3.0.2",
     "file-loader": "1.1.11",
     "fs-extra": "7.0.0",
     "html-webpack-plugin": "2.28.0",
@@ -102,9 +102,9 @@
     "sw-precache-webpack-plugin": "0.11.5",
     "url-loader": "1.0.1",
     "wait-on": "2.1.0",
-    "webpack": "2.6.1",
-    "webpack-dev-server": "2.4.5",
-    "webpack-manifest-plugin": "1.1.0",
+    "webpack": "^3.12.0",
+    "webpack-dev-server": "^2.11.2",
+    "webpack-manifest-plugin": "^2.0.3",
     "whatwg-fetch": "2.0.4"
   },
   "jest": {
