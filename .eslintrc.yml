@@ -1,0 +1,7 @@
+extends: [standard, standard-react, plugin:jest/recommended, plugin:flowtype/recommended]
+plugins: [jest, flowtype]
+parser: babel-eslint
+parserOptions: 
+  ecmaFeatures:
+    jsx: true
+    modules: true
